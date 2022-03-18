@@ -1,0 +1,17 @@
+body.home {
+    background-color: var(--colorAmarillo);
+}
+           /* HEATHER */
+
+body header p{
+    text-align: center;
+}
+.home header nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+body header nav ul li{
+    font-family: "Roboto";
+    font-size: 12px;
+    list-style: none;
+}
