@@ -1,17 +1,108 @@
 body.home {
     background-color: var(--colorAmarillo);
 }
-           /* HEATHER */
+                                                /* HEATHER */
 
-body header p{
-    text-align: center;
+header img{
+    margin: 20px;
 }
-.home header nav ul li a{
+header p{
+    font-family: "Roboto";
+    text-align: center;
+    margin-top: 20px;
+}
+header div.search{
+    margin: 20px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header nav ul li a{
     color: black;
+    font-family: "Roboto";
     text-decoration: none;
 }
 body header nav ul li{
     font-family: "Roboto";
     font-size: 12px;
     list-style: none;
+}
+header nav ul.second{
+    margin-top: 10px;
+}
+button.burger{
+    background-color: var(--colorCeleste);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-size: 32px;
+    margin: 0 auto 30px;
+    padding: 5px;
+    width: 50px;
+}
+                                                /* MAIN */
+
+main{
+    background-color: white;
+}
+main h3{
+    font-family: "Roboto";
+    font-size: 24px;
+}
+main article p.precio{
+    font-family: "Roboto";
+    font-size: 18px;
+}
+main article p.descuento{
+    font-family: "Roboto";
+    font-size: 16px;
+}
+main article h4{
+    font-family: "Roboto";
+    font-size: 16px;
+}
+                                                /* FOOTER */
+footer{
+    background-color: white;
+    text-align: center;
+}
+footer section i.fa-solid.fa-credit-card{
+    background-color: white;
+    color: var(--colorCeleste);
+    display: block;
+    font-size: 2em;
+    margin: 0 auto 10px;
+}
+footer section i.fa-solid.fa-gift{
+    background-color: white;
+    color: var(--colorCeleste);
+    display: block;
+    font-size: 2em;
+    margin: 0 auto 10px;
+}
+footer section i.fa-solid.fa-user-shield{
+    background-color: white;
+    color: var(--colorCeleste);
+    display: block;
+    font-size: 2em;
+    margin: 0 auto 10px;
+}
+footer section h4{
+    color: var(--colorGris-oscuro);
+    font-family: "Lato";
+    font-size: 20px;
+}
+footer section p{
+    color: var(--colorGris-oscuro);
+    font-family: "Lato";
+}
+footer section h6{
+    color: var(--colorGris-oscuro);
+    font-family: "Lato";
+    font-size: 12px;
+    margin: 40px;
+    text-align: left;
+    text-decoration: none;
 }
