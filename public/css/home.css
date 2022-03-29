@@ -1,9 +1,9 @@
-body.home {
+                                                    /* HEATHER */
+header{
     background-color: var(--colorAmarillo);
 }
-                                                /* HEATHER */
-
 header img{
+    background-image: auto;
     margin: 20px;
 }
 header p{
@@ -45,7 +45,7 @@ button.burger{
     padding: 5px;
     width: 50px;
 }
-                                                /* MAIN */
+                                                    /* MAIN */
 
 main{
     background-color: white;
@@ -66,10 +66,13 @@ main article h4{
     font-family: "Roboto";
     font-size: 16px;
 }
-                                                /* FOOTER */
+                                                    /* FOOTER */
 footer{
     background-color: white;
     text-align: center;
+}
+footer section{
+    margin-top: 40px;
 }
 footer section i.fa-solid.fa-credit-card{
     background-color: white;
