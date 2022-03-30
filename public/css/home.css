@@ -3,8 +3,10 @@ header{
     background-color: var(--colorAmarillo);
 }
 header img{
-    background-image: auto;
-    margin: 20px;
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 45% ;
+        height: 10%;
 }
 header p{
     font-family: "Roboto";
@@ -49,10 +51,20 @@ button.burger{
 
 main{
     background-color: white;
+    text-align: center;
+    width: 90%;
 }
 main h3{
     font-family: "Roboto";
     font-size: 24px;
+}
+main section article{
+    margin: 10px;
+}
+main section article div{
+    border: solid 1px #ebebeb;
+    margin: 15px;
+    text-align: left;
 }
 main article p.precio{
     font-family: "Roboto";
