@@ -1,10 +1,12 @@
-body.home {
+                                                    /* HEATHER */
+header{
     background-color: var(--colorAmarillo);
 }
-                                                /* HEATHER */
-
 header img{
-    margin: 20px;
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 45% ;
+        height: 10%;
 }
 header p{
     font-family: "Roboto";
@@ -45,14 +47,24 @@ button.burger{
     padding: 5px;
     width: 50px;
 }
-                                                /* MAIN */
+                                                    /* MAIN */
 
 main{
     background-color: white;
+    text-align: center;
+    width: 90%;
 }
 main h3{
     font-family: "Roboto";
     font-size: 24px;
+}
+main section article{
+    margin: 10px;
+}
+main section article div{
+    border: solid 1px #ebebeb;
+    margin: 15px;
+    text-align: left;
 }
 main article p.precio{
     font-family: "Roboto";
@@ -66,10 +78,13 @@ main article h4{
     font-family: "Roboto";
     font-size: 16px;
 }
-                                                /* FOOTER */
+                                                    /* FOOTER */
 footer{
     background-color: white;
     text-align: center;
+}
+footer section{
+    margin-top: 40px;
 }
 footer section i.fa-solid.fa-credit-card{
     background-color: white;
