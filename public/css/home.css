@@ -1,12 +1,19 @@
-                                                    /* HEATHER */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+                                                /* HEATHER */
 header{
     background-color: var(--colorAmarillo);
+    padding: 20px 0;
 }
-header img{
-        margin-top: 30px;
-        margin-left: 20px;
-        width: 45% ;
-        height: 10%;
+header .superior{
+    padding: 0px 20px;
+}
+header div img{
+    width: 45% ;
+    height: 10%;
 }
 header p{
     font-family: "Roboto";
@@ -14,11 +21,7 @@ header p{
     margin-top: 20px;
 }
 header div.search{
-    margin: 20px;
-}
-*{
-    padding: 0;
-    margin: 0;
+    padding: 0 10px;
 }
 header nav ul li a{
     color: black;
@@ -39,52 +42,81 @@ header nav ul.second{
 button.burger{
     background-color: var(--colorCeleste);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     color: white;
     display: block;
     font-size: 32px;
-    margin: 0 auto 30px;
-    padding: 5px;
+    margin: 0 auto;
+    padding: 8px;
+    text-align: center;
     width: 50px;
 }
                                                     /* MAIN */
 
 main{
-    background-color: white;
-    text-align: center;
-    width: 90%;
+    background-color: var(--colorGris-claro);
 }
-main h3{
-    font-family: "Roboto";
-    font-size: 24px;
-}
-main section article{
-    margin: 10px;
-}
-main section article div{
-    border: solid 1px #ebebeb;
-    margin: 15px;
-    text-align: left;
+main .banner{
+    display: none;
 }
 main article p.precio{
     font-family: "Roboto";
     font-size: 18px;
+    margin: 0;
 }
 main article p.descuento{
     font-family: "Roboto";
     font-size: 16px;
+    color:var(--colorVerde);
+    margin: 0;
 }
 main article h4{
+    color: var(--colorGris-oscuro);
     font-family: "Roboto";
     font-size: 16px;
+    margin:0;
 }
+main h3{
+    color: var(--colorGris-oscuro);
+    font-family: "Roboto";
+    font-size: 24px;
+    margin:0;
+}
+main section{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+main section article{
+    background-color: white;
+    margin: 10px 0;
+}
+main section article div{
+    border: solid 1px #ebebeb;
+    padding: 0 15px;
+    text-align: left;
+}
+main section article div i.fa-solid.fa-truck{
+    border: 1px solid var(--colorVerde);
+    border-radius: 50%;
+    color: var(--colorVerde);
+    font-size: 20px;
+    height: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 10px;
+}
+
+}
+
                                                     /* FOOTER */
 footer{
-    background-color: white;
     text-align: center;
+    padding: 20px 0;
 }
 footer section{
-    margin-top: 40px;
+    padding:50px 30px 0;
+    text-align: center;
 }
 footer section i.fa-solid.fa-credit-card{
     background-color: white;
@@ -107,20 +139,35 @@ footer section i.fa-solid.fa-user-shield{
     font-size: 2em;
     margin: 0 auto 10px;
 }
-footer section h4{
+footer section h3{
     color: var(--colorGris-oscuro);
-    font-family: "Lato";
+    font-family: "Roboto";
     font-size: 20px;
+    margin: 0;
 }
 footer section p{
     color: var(--colorGris-oscuro);
-    font-family: "Lato";
+    font-family: "Roboto";
+    margin: 0;
 }
 footer section h6{
     color: var(--colorGris-oscuro);
-    font-family: "Lato";
+    font-family: "Roboto";
     font-size: 12px;
-    margin: 40px;
-    text-align: left;
-    text-decoration: none;
+    padding:50px 20px 0;
+    text-align: initial;
+}
+
+
+@media(min-width:426px){
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
+    }
+}
+@media(min-width:769px){
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
 }
