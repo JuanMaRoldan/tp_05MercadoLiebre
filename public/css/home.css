@@ -57,7 +57,7 @@ main{
     background-color: var(--colorGris-claro);
 }
 main .banner{
-    display: none;
+    display: auto;
 }
 main article p.precio{
     font-family: "Roboto";
@@ -158,14 +158,31 @@ footer section h6{
     text-align: initial;
 }
 
-
-@media(min-width:426px){
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        
+                                                /* MOBIL */
+@media(max-width:425px){
+    /*     HEADER*/
+    header nav ul.first{
+        display: none;
+    }
+    header nav ul.second{
+        display: none;
     }
 }
+                                                /* TABLET */
+@media(min-width:426px){
+    button.burger{
+        display: none;
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+}
+                                                /* DESKTOP */
 @media(min-width:769px){
+    button.burger{
+        display: none;
+    }
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
