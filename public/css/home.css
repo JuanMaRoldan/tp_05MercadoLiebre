@@ -97,16 +97,20 @@ main section article div{
     text-align: left;
 }
 main section article div i.fa-solid.fa-truck{
+    background-color: #fff;
     border: 1px solid var(--colorVerde);
     border-radius: 50%;
     color: var(--colorVerde);
-    font-size: 20px;
-    height: 10px;
-    padding: 20px;
+    display: block;
+    font-size: 16px;
+    height: 30px;
+    padding: 5px;
+    position: relative;
+    right: 20px;
     text-align: center;
-    width: 10px;
+    top: -15px;
+    width: 30px;
 }
-
 
                                                     /* FOOTER */
 footer{
