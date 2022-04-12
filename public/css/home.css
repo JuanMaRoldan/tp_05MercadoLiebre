@@ -64,12 +64,14 @@ main article p.precio{
     font-family: "Roboto";
     font-size: 18px;
     margin: 0;
+    width: 30%;
 }
 main article p.descuento{
     font-family: "Roboto";
     font-size: 16px;
     color:var(--colorVerde);
     margin: 0;
+    width: 70%;
 }
 main article h4{
     color: var(--colorGris-oscuro);
@@ -113,7 +115,10 @@ main section article div i.fa-solid.fa-truck{
     top: -15px;
     width: 30px;
 }
-
+.precio-descuento{
+    display: flex;
+    flex-direction: row;
+}
                                                     /* FOOTER */
 footer{
     padding: 20px 0;
