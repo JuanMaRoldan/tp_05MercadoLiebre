@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
                                                 /* HEATHER */
@@ -18,7 +19,7 @@ header div img{
 header p{
     font-family: "Roboto";
     text-align: center;
-    margin-top: 20px;
+    margin: 20px;
 }
 header div.search{
     padding: 0 10px;
@@ -63,12 +64,14 @@ main article p.precio{
     font-family: "Roboto";
     font-size: 18px;
     margin: 0;
+    width: 30%;
 }
 main article p.descuento{
     font-family: "Roboto";
     font-size: 16px;
     color:var(--colorVerde);
     margin: 0;
+    width: 70%;
 }
 main article h4{
     color: var(--colorGris-oscuro);
@@ -91,28 +94,35 @@ main section article{
     background-color: white;
     margin: 10px 0;
 }
-main section article div{
+main section article div.detalle{
     border: solid 1px #ebebeb;
     padding: 0 15px;
     text-align: left;
+    position: relative;
 }
 main section article div i.fa-solid.fa-truck{
+    background-color: #fff;
     border: 1px solid var(--colorVerde);
     border-radius: 50%;
     color: var(--colorVerde);
-    font-size: 20px;
-    height: 10px;
-    padding: 20px;
+    display: block;
+    font-size: 16px;
+    height: 30px;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
     text-align: center;
-    width: 10px;
+    top: -15px;
+    width: 30px;
 }
-
+.precio-descuento{
+    display: flex;
+    flex-direction: row;
 }
-
                                                     /* FOOTER */
 footer{
-    text-align: center;
     padding: 20px 0;
+    text-align: center;
 }
 footer section{
     padding:50px 30px 0;
@@ -150,7 +160,7 @@ footer section p{
     font-family: "Roboto";
     margin: 0;
 }
-footer section h6{
+footer section.copyright{
     color: var(--colorGris-oscuro);
     font-family: "Roboto";
     font-size: 12px;
@@ -185,6 +195,22 @@ footer section h6{
     }
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    /* FOOTER */
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    footer section{
+        display: block;
+        padding: 50px 0 0;
+        width: 33%;
+    }
+    footer section.copyright{
+        padding: 30px 10px 0;
+        text-align: center;
+        width: 100%;
     }
 
 }
