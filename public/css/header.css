@@ -11,6 +11,7 @@ header .logo{
 }
 header p{
     text-align: center;
+    padding: 10px 0;
 }
 button.burger{
     background-color: var(--colorCeleste);
@@ -22,4 +23,25 @@ button.burger{
     padding: 8px;
     text-align: center;
     width: 45px;
+}
+
+/* MOBIL */
+@media(max-width:425px){
+    /*     HEADER*/
+    header nav ul.first{
+        display: none;
+    }
+    header nav ul.second{
+        display: none;
+    }
+}
+                                                /* TABLET */
+@media(min-width:426px){
+    button.burger{
+        display: none;
+    }
+}
+                                                /* DESKTOP */
+@media(min-width:769px){
+    
 }

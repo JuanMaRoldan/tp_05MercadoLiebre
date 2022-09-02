@@ -1,0 +1,62 @@
+.home main{
+    background-color: var(--colorGris-claro);
+}
+.home main .banner{
+    display: block;
+}
+.home main h2{
+    color: var(--colorGris-oscuro);
+    font-size: var(--titular);
+    margin:0;
+}
+.home main section{
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 90%;
+}
+.home main section article{
+    background-color: white;
+    margin: 10px 0;
+}
+.home main section article .detalle{
+    border: 1px solid var(--colorGris-claro);
+    padding: 0 15px;
+}
+.home main section article .detalle .camioncito{
+    background-color: #fff;
+    border: 1px solid var(--colorVerde);
+    border-radius: 50%;
+    color: var(--colorVerde);
+    font-size: 12px;
+    height: 15px;
+    padding: 5px;
+    text-align: center;
+    width: 15px;
+}
+.home main section article .detalle p{
+    font-size: var(--precio);
+    margin: 0;
+}
+.home main section article .detalle span{
+    font-size: var(--descuentosYDescripciones);
+    color:var(--colorVerde);
+    margin: 0;
+}
+.home main section article .detalle h4{
+    color: var(--colorGris-oscuro);
+    display: none;
+    font-size: var(--precio);
+    margin:0;
+}
+
+@media(min-width:426px){
+    .home main section article{
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+    .home main section article .detalle h4{
+        display: block;
+    }
+}
+@media(min-width:769px){
+
+}
