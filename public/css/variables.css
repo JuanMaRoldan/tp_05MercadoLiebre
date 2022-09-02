@@ -6,4 +6,10 @@
     --colorGris-oscuro: #666;
     --colorGris-claro: #ebebeb;
     --colorVerde: #39b54a;
+    /* FUENTES */
+    --body-font:'Roboto';
+    --cuerpo-texto: 12px ;
+    --titular: 24px ;
+    --precio: 18px ;
+    --descuentosYDescripciones: 16px ;
 }
