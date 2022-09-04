@@ -44,16 +44,22 @@ button.burger{
                                                 /* TABLET */
 @media(min-width:426px){
     header {
+        align-items: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
     }
     header .superior{
+        align-items: center;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 10px 20px 10px;
-        width: 50%;
+        width: 75%;
+    }
+    header p{
+        text-align: center;
+        width: 150px;
     }
     header nav{
         display: flex;
@@ -62,6 +68,8 @@ button.burger{
     }
     header nav ul{
         display: flex;
+        justify-content: space-evenly;
+        width: 100%;
     }
 
     button.burger{
