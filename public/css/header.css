@@ -3,15 +3,21 @@ header{
     padding: 20px 0;
 }
 header .superior{
-    padding: 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 20px 10px;
 }
 header .logo{
     width: 45% ;
     height: 10%;
 }
+header .search{
+    align-items: center;
+    width: 45%;
+}
 header p{
-    text-align: center;
     padding: 10px 0;
+    text-align: center;
 }
 button.burger{
     background-color: var(--colorCeleste);
@@ -25,7 +31,7 @@ button.burger{
     width: 45px;
 }
 
-/* MOBIL */
+                                                /* MOBIL */
 @media(max-width:425px){
     /*     HEADER*/
     header nav ul.first{
@@ -37,11 +43,32 @@ button.burger{
 }
                                                 /* TABLET */
 @media(min-width:426px){
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    header .superior{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 20px 10px;
+        width: 50%;
+    }
+    header nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    header nav ul{
+        display: flex;
+    }
+
     button.burger{
         display: none;
     }
 }
-                                                /* DESKTOP */
+                                                /* LAPTOP */
 @media(min-width:769px){
     
 }

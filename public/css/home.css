@@ -2,7 +2,7 @@
     background-color: var(--colorGris-claro);
 }
 .home main .banner{
-    display: block;
+    display: none;
 }
 .home main h2{
     color: var(--colorGris-oscuro);
@@ -17,21 +17,27 @@
 .home main section article{
     background-color: white;
     margin: 10px 0;
+    width: 300px;
 }
 .home main section article .detalle{
     border: 1px solid var(--colorGris-claro);
     padding: 0 15px;
+    position: relative;
 }
 .home main section article .detalle .camioncito{
     background-color: #fff;
     border: 1px solid var(--colorVerde);
     border-radius: 50%;
     color: var(--colorVerde);
-    font-size: 12px;
-    height: 15px;
+    display: block;
+    font-size: 17px;
+    height: 20px;
     padding: 5px;
+    position: absolute;
+    right: 20px;
     text-align: center;
-    width: 15px;
+    top: -15px;
+    width: 20px;
 }
 .home main section article .detalle p{
     font-size: var(--precio);
@@ -49,14 +55,42 @@
     margin:0;
 }
 
+                                                /* TABLET */
+
 @media(min-width:426px){
+    .home main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .home main h2{
+        margin: 10px 40px
+    }
+    .home main section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .home main .banner{
+        display: block;
+    }
     .home main section article{
         box-shadow: 0 0 10px rgb(100, 100, 100);
+        width: 48%;
     }
     .home main section article .detalle h4{
         display: block;
     }
 }
-@media(min-width:769px){
 
+                                                /* LAPTOP */
+
+@media(min-width:769px){
+    .home main section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .home main section article{
+        width: 24%;
+    }
 }

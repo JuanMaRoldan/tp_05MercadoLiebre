@@ -3,7 +3,7 @@ footer{
     padding: 20px 0;
 }
 footer section{
-    padding:50px 30px 0;
+    padding:50px 60px 0;
 }
 footer i{
     color: var(--colorCeleste);
@@ -20,4 +20,23 @@ footer p{
 footer section.copyright{
     padding:50px 20px 0;
     text-align: initial;
+}
+
+                                                /* TABLET */
+
+                                                /* LAPTOP */
+@media(min-width:769px){
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    footer section{
+        width:17%;
+    }
+    footer section.copyright{
+        text-align: center;
+        width: 100%;
+    }
+
 }
