@@ -3,7 +3,7 @@ footer{
     padding: 20px 0;
 }
 footer section{
-    padding:50px 60px 0;
+    padding:50px 0;
 }
 footer i{
     color: var(--colorCeleste);
@@ -18,12 +18,13 @@ footer p{
     margin: 0;
 }
 footer section.copyright{
-    padding:50px 20px 0;
+    padding:5px 0;
     text-align: initial;
 }
 
                                                 /* TABLET */
-
+@media(min-width:426px){
+}
                                                 /* LAPTOP */
 @media(min-width:769px){
     footer{
@@ -32,6 +33,7 @@ footer section.copyright{
         justify-content: space-evenly;
     }
     footer section{
+        padding: 50px 20px 0;
         width:17%;
     }
     footer section.copyright{

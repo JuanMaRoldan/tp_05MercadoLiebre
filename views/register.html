@@ -15,113 +15,125 @@
             rel="stylesheet"
         />
     </head>
-
-    <body>
+    <body class="register">
         <header>
-            <div class="superior">
-                <div class="logo">
-                    <img src="/images/logo-mercado-liebre.svg" alt="">
+            <div class="container">
+                <div class="superior">
+                    <div class="logo">
+                        <a href="/" class="main-header_home-link">
+                            <img src="/images/logo-mercado-liebre.svg">
+                        </a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Buscar productos, marcas" style="width: 100%;">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
                 </div>
-                <div class="search">
-                    <input type="text" placeholder="Buscar productos, marcas">
-                    <button><i class="fas fa-search"></i></button>
+                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+                <nav>
+                    <ul class="first">
+                       <li><a href="">Ofertas</a></li>
+                       <li><a href="">Tiendas Oficiales</a></li>
+                       <li><a href="">Vender</a></li>
+                       <li><a href="">Ayuda</a></li>
+                    </ul>
+                    <ul class="second">
+                        <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+                        <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                        <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="burger-menu">
+                    <button class="burger"><i class="fas fa-bars"></i></button>
                 </div>
-            </div>
-            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-            <nav>
-                <ul class="first">
-                   <li><a href="">Ofertas</a></li>
-                   <li><a href="">Tiendas Oficiales</a></li>
-                   <li><a href="">Vender</a></li>
-                   <li><a href="">Ayuda</a></li>
-                </ul>
-                <ul class="second">
-                    <li><a href="">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
-                    <li><a href="">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-                </ul>
-            </nav>
-            <div class="burger-menu">
-                <button class="burger"><i class="fas fa-bars"></i></button>
             </div>
         </header>
         <main>
             <section>
                 <h1>Bienvenido/a</h1>
+                <hr>
                 <form action="">
-                    <div class="form-box">
-                        <label for="nombre">Nombre y Apellido</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu Nombre Completo">
-                        <span>Obligatorio</span>
+                    <div class="form-container">
+                        <div class="register__form-box">
+                            <label for="nombre">Nombre y Apellido:</label>
+                            <input class="register__form-imput" type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido">
+                            <span class="register__text-error">Obligatorio</span>
+                        </div>
+                        <div class="register__form-box">
+                            <label for="nick">Nombre de Usuario:</label>
+                            <input class="register__form-imput" type="text" id="nick" name="nick" placeholder="Nombre de Usuario">
+                            <span class="register__text-error">Obligatorio</span>
+                        </div>
+                        <div class="register__form-box">
+                            <label for="email">E-mail:</label>
+                            <input class="register__form-imput" type="email" id="email" name="email" placeholder="Correo Electronico">
+                            <span class="register__text-error">Obligatorio</span>
+                        </div>
+                        <div class="register__form-box">
+                            <label for="password">Contraseña:</label>
+                            <input class="register__form-imput" type="password" id="password" name="password" placeholder="Contraseña">
+                            <span class="register__text-error">Obligatorio</span>
+                        </div>
+                        <div class="register__form-box">
+                            <label for="password2">Repita su Contraseña</label>
+                            <input class="register__form-imput" type="password2" id="password2" name="password2" placeholder="Repita su Contraseña">
+                            <span class="register__text-error">Obligatorio</span>
+                        </div>
+                        <h4>Fecha de Nacimiento</h4>
+                        <div class="register__form-box">
+                            <label for="date"></label>
+                            <input type="date" id="date" name="date" value="">
+                        </div>
+                        <div class="register__form-box">
+                            <label for="domicilio">Domicilio:</label>
+                            <input class="register__form-imput" type="text" id="domicilio" name="domicilio" placeholder="Domicilio">
+                        </div>
+                        <div class="register__form-box">
+                            <h4>Perfil del Usuario</h4>
+                                <div class="register__radio-box">
+                                    <input type="radio" name="rol" id="comprador" value="com">
+                                    <label for="comprador">Comprador</label>
+                                </div>
+                                <div class="register__radio-box">
+                                    <input type="radio" name="rol" id="vendedor" value="ven">
+                                    <label for="vendedor">Vendedor</label>
+                                </div>
+                        </div>
+                        <div class="register__form-intereses">
+                            <h4>Intereses</h4>
+                                <div>
+                                    <input type="checkbox" name="intereses" id="eletro" value="eletro">
+                                    <label for="eletro">Electro</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="intereses" id="moda" value="moda">
+                                    <label for="moda">Moda</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="intereses" id="hogar" value="hogar">
+                                    <label for="hogar">Hogar</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="intereses" id="jugueteria" value="jugueteria">
+                                    <label for="jugueteria">Jugueteria</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="intereses" id="vidaSana" value="vidaSana">
+                                    <label for="vidaSana">Vida Sana</label>
+                                </div>
+                        </div>
+                        <div>
+                            <h4>Imagen de Perfil</h4>
+                        </div>
+                        <div class="register__form-box register__center">
+                            <input class="" type="checkbox" name="terminos" id="terminos">
+                            <label for="terminos">Términos y Condiciones</label>
+                        </div>
+                        <div class="register__form-box register__center">
+                            <button type="reset" style="background-color: rgb(252, 35, 35);">Eliminar Formulario</button>
+                            <button type="submit">Registrarme</button>
+                        </div>
                     </div>
-                    <div class="form-box">
-                        <label for="nick">Nombre de Usuario</label>
-                        <input type="text" id="nick" name="nick" placeholder="Escribe tu Usuario">
-                        <span>Obligatorio</span>
-                    </div>
-                    <div class="form-box">
-                        <label for="email">E-Mail</label>
-                        <input type="email" id="email" name="email" placeholder="Escribe tu Correo Electronico">
-                        <samp>Obligatorio</samp>
-                    </div>
-                    <div class="form-box">
-                        <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password">
-                        <span>Obligatorio</span>
-                    </div>
-                    <div class="form-box">
-                        <label for="password2">Confirmar Contraseña</label>
-                        <input type="password2" id="password2" name="password2">
-                        <span>Obligatorio</span>
-                    </div>
-                    <h4>Fecha de Nacimiento</h4>
-
-                    <div class="form-box">
-                        <label for="domicilio">Domicilio</label>
-                        <input type="text" id="domicilio" name="domicilio" placeholder="Indica tu Domicilio">
-                    </div>
-                    <div>
-                        <h4>Perfil del Usuario</h4>
-                            <div class="form-box">
-                                <input type="radio" name="rol" id="comprador" value="com">
-                                <label for="comprador">Comprador</label>
-                            </div>
-                            <div class="form-box">
-                                <input type="radio" name="rol" id="vendedor" value="ven">
-                                <label for="vendedor">Vendedor</label>
-                            </div>
-                    </div>
-                    <div>
-                        <h4>Intereses</h4>
-                            <div>
-                                <input type="checkbox" name="intereses" id="eletro" value="eletro">
-                                <label for="eletro">Electro</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="intereses" id="moda" value="moda">
-                                <label for="moda">Moda</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="intereses" id="hogar" value="hogar">
-                                <label for="hogar">Hogar</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="intereses" id="jugueteria" value="jugueteria">
-                                <label for="jugueteria">Jugueteria</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="intereses" id="vidaSana" value="vidaSana">
-                                <label for="vidaSana">Vida Sana</label>
-                            </div>
-                    </div>
-                    <div>
-                        <h4>Imagen de Perfil</h4>
-                    </div>
-                    <input type="checkbox" name="terminos" id="terminos">
-                    <label for="terminos">Términos y Condiciones</label>
-                    
-                    <button type="reset">Eliminar Formulario</button>
-                    <button type="submit">Registrarme</button>
                 </form>
             </section>
         </main>

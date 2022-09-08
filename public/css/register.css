@@ -1,0 +1,53 @@
+section{
+    background-color: var(--colorGris-claro);
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 10px;
+    width: 90%;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+form{
+    margin-top: 20px;
+}
+.register__form-box, h4{
+    margin-bottom: 15px;
+}
+.register__radio-box{
+    margin: 0 0 10px 5px;
+}
+.register__form-imput{
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0 0;
+    padding: 10px 5px;
+    width: 95%;
+}
+.register__text-error{
+    color: tomato;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+.register__form-intereses{
+    margin-bottom: 15px;
+}
+.register__center {
+    text-align: center;
+}
+.form-container button{
+    background-color: var(--colorCeleste);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+                /* VISTA TABLET */
+@media(min-width:426px){
+
+}
+                /* VISTA LAPTOP*/
+@media(min-width:426px){
+}
