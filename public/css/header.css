@@ -32,7 +32,7 @@ button.burger{
 }
 
                                                 /* MOBIL */
-@media(max-width:425px){
+@media(max-width:435px){
     /*     HEADER*/
     header nav ul.first{
         display: none;
@@ -42,13 +42,19 @@ button.burger{
     }
 }
                                                 /* TABLET */
-@media(min-width:426px){
+@media(min-width:436px){
     header {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
+    }
+    header .container{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     header .superior{
         align-items: center;
