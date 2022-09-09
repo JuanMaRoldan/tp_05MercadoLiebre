@@ -33,10 +33,15 @@ footer section.copyright{
         justify-content: space-evenly;
     }
     footer section{
-        padding: 50px 20px 0;
+        padding: 50px 20px 10px 0;
         width:17%;
+    }footer section:hover{
+        border-radius: 10px;
+        background-color: var(--colorGris-claro);
+        color: var(--colorCeleste);
     }
     footer section.copyright{
+        margin-top: 10px ;
         text-align: center;
         width: 100%;
     }

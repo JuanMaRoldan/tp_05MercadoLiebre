@@ -19,6 +19,9 @@
     margin: 10px 0;
     width: 300px;
 }
+.home main section article:hover{
+    box-shadow: 5px 5px 10px gray;
+}
 .home main section article .detalle{
     border: 1px solid var(--colorGris-claro);
     padding: 0 15px;
@@ -36,8 +39,12 @@
     position: absolute;
     right: 20px;
     text-align: center;
+    transition: width 2s, height 2s, transform 2s;
     top: -15px;
     width: 20px;
+}
+.home main section article .detalle .camioncito:hover{
+    transform: rotate(360deg);
 }
 .home main section article .detalle p{
     font-size: var(--precio);
@@ -74,7 +81,6 @@
         display: block;
     }
     .home main section article{
-        box-shadow: 0 0 10px rgb(100, 100, 100);
         width: 48%;
     }
     .home main section article .detalle h4{
