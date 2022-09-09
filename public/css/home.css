@@ -57,7 +57,7 @@
 
                                                 /* TABLET */
 
-@media(min-width:426px){
+@media(min-width:436px){
     .home main{
         display: flex;
         flex-wrap: wrap;
