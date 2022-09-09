@@ -1,6 +1,7 @@
-section{
+.register-form{
     background-color: var(--colorGris-claro);
     border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
     margin: 30px auto;
     padding: 10px;
     width: 90%;
@@ -45,9 +46,21 @@ form{
     text-align: center;
 }
                 /* VISTA TABLET */
-@media(min-width:426px){
-
+@media(min-width:436px){
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    article .register__form-box{
+        width: 48%;
+    }
 }
                 /* VISTA LAPTOP*/
-@media(min-width:426px){
+@media(min-width:769px){
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }

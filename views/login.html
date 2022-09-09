@@ -52,30 +52,32 @@
             </div>
         </header>
         <main>
-            <section>
+            <section class="login-form">
                 <h1>Ingresá</h1>
                 <hr>
                 <form action="">
-                    <div class="form-container">
-                        <div class="login__form-box">
-                            <label for="nick">Nombre de Usuario:</label>
-                            <input class="login__form-imput" type="text" id="nick" name="nick" placeholder="Nombre de Usuario">
-                            <span class="login__text-error">Obligatorio</span>
+                    <article>
+                        <div class="form-container">
+                            <div class="login__form-box">
+                                <label for="nick">Nombre de Usuario:</label>
+                                <input class="login__form-imput" type="text" id="nick" name="nick" placeholder="Nombre de Usuario">
+                                <span class="login__text-error">Obligatorio</span>
+                            </div>
+                            
+                            <div class="login__form-box">
+                                <label for="password">Contraseña:</label>
+                                <input class="login__form-imput" type="password" id="password" name="password" placeholder="Contraseña">
+                                <span class="login__text-error">Obligatorio</span>
+                            </div>
+                            <div class="login__form-box login__end">
+                                <input class="" type="checkbox" name="recuerdame" id="recuerdame">
+                                <label for="recuerdame">Recuerdame</label>
+                            </div>
+                            <div class="login__form-box login__center">
+                                <button type="submit">Ingresar</button>
+                            </div>
                         </div>
-                        
-                        <div class="login__form-box">
-                            <label for="password">Contraseña:</label>
-                            <input class="login__form-imput" type="password" id="password" name="password" placeholder="Contraseña">
-                            <span class="login__text-error">Obligatorio</span>
-                        </div>
-                        <div class="login__form-box login__end">
-                            <input class="" type="checkbox" name="recuerdame" id="recuerdame">
-                            <label for="recuerdame">Recuerdame</label>
-                        </div>
-                        <div class="login__form-box login__center">
-                            <button type="submit">Ingresar</button>
-                        </div>
-                    </div>
+                    </article>
                 </form>
             </section>
         </main>
@@ -99,10 +101,9 @@
                     porque estás siempre protegid@.
                     </p>
             </section>
-    
             <section class="copyright">
                 <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
             </section>
-        </footer>    
+        </footer>
     </body>
 </html>
